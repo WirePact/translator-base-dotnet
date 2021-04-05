@@ -1,7 +1,7 @@
 <Project>
 
     <PropertyGroup>
-        <Authors>WirePact Authors</Authors>
+        <Authors>Christoph Bühler</Authors>
         <Owner>WirePact</Owner>
     </PropertyGroup>
 

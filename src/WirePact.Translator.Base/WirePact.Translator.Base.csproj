@@ -1,0 +1,94 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="..\..\config\Common.targets"/>
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <IsPackable>true</IsPackable>
+        <Authors>Christoph Bühler</Authors>
+        <Title>WirePact Translator Base</Title>
+        <PackageId>WirePact.Translator.Base</PackageId>
+        <PackageTags>WirePact;Translator;gRPC</PackageTags>
+        <PackageProjectUrl>https://github.com/WirePact/translator-base-dotnet</PackageProjectUrl>
+        <Description>
+            The base API for a dotnet translator for WirePact.
+            Contains the gRPC envoy API to interact with the system.
+        </Description>
+        <RepositoryUrl>https://github.com/WirePact/translator-base-dotnet.git</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+        <!--<PackageIcon>icon.png</PackageIcon>-->
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Google.Protobuf" Version="3.15.6"/>
+        <PackageReference Include="Grpc" Version="2.36.4"/>
+        <PackageReference Include="Grpc.Core" Version="2.36.4"/>
+        <PackageReference Include="Grpc.Net.ClientFactory" Version="2.32.0"/>
+        <PackageReference Include="Grpc.Net.Common" Version="2.36.0"/>
+        <PackageReference Include="Grpc.Tools" Version="2.36.4" PrivateAssets="All"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Protobuf Include="envoy/config/core/v3/address.proto" GrpcServices="None">
+            <SourceUrl>https://raw.githubusercontent.com/envoyproxy/envoy/fcdaf20519216082db374dfad92e5b4771cc37fd/api/envoy/config/core/v3/address.proto</SourceUrl>
+        </Protobuf>
+        <Protobuf Include="envoy/config/core/v3/backoff.proto" GrpcServices="None">
+            <SourceUrl>https://raw.githubusercontent.com/envoyproxy/envoy/fcdaf20519216082db374dfad92e5b4771cc37fd/api/envoy/config/core/v3/backoff.proto</SourceUrl>
+        </Protobuf>
+        <Protobuf Include="envoy/config/core/v3/base.proto" GrpcServices="None">
+            <SourceUrl>https://raw.githubusercontent.com/envoyproxy/envoy/fcdaf20519216082db374dfad92e5b4771cc37fd/api/envoy/config/core/v3/base.proto</SourceUrl>
+        </Protobuf>
+        <Protobuf Include="envoy/config/core/v3/http_uri.proto" GrpcServices="None">
+            <SourceUrl>https://raw.githubusercontent.com/envoyproxy/envoy/fcdaf20519216082db374dfad92e5b4771cc37fd/api/envoy/config/core/v3/http_uri.proto</SourceUrl>
+        </Protobuf>
+        <Protobuf Include="envoy/config/core/v3/socket_option.proto" GrpcServices="None">
+            <SourceUrl>https://raw.githubusercontent.com/envoyproxy/envoy/fcdaf20519216082db374dfad92e5b4771cc37fd/api/envoy/config/core/v3/socket_option.proto</SourceUrl>
+        </Protobuf>
+        <Protobuf Include="envoy/service/auth/v3/attribute_context.proto" GrpcServices="None">
+            <SourceUrl>https://raw.githubusercontent.com/envoyproxy/envoy/fcdaf20519216082db374dfad92e5b4771cc37fd/api/envoy/service/auth/v3/attribute_context.proto</SourceUrl>
+        </Protobuf>
+        <Protobuf Include="envoy/service/auth/v3/external_auth.proto" GrpcServices="Server">
+            <SourceUrl>https://raw.githubusercontent.com/envoyproxy/envoy/fcdaf20519216082db374dfad92e5b4771cc37fd/api/envoy/service/auth/v3/external_auth.proto</SourceUrl>
+        </Protobuf>
+        <Protobuf Include="envoy/type/v3/http_status.proto" GrpcServices="None">
+            <SourceUrl>https://raw.githubusercontent.com/envoyproxy/envoy/fcdaf20519216082db374dfad92e5b4771cc37fd/api/envoy/type/v3/http_status.proto</SourceUrl>
+        </Protobuf>
+        <Protobuf Include="envoy/type/v3/percent.proto" GrpcServices="None">
+            <SourceUrl>https://raw.githubusercontent.com/envoyproxy/envoy/fcdaf20519216082db374dfad92e5b4771cc37fd/api/envoy/type/v3/percent.proto</SourceUrl>
+        </Protobuf>
+        <Protobuf Include="envoy/type/v3/semantic_version.proto" GrpcServices="None">
+            <SourceUrl>https://raw.githubusercontent.com/envoyproxy/envoy/fcdaf20519216082db374dfad92e5b4771cc37fd/api/envoy/type/v3/semantic_version.proto</SourceUrl>
+        </Protobuf>
+        <Protobuf Include="google/rpc/code.proto" GrpcServices="Client">
+            <SourceUrl>https://raw.githubusercontent.com/googleapis/googleapis/master/google/rpc/code.proto</SourceUrl>
+        </Protobuf>
+        <Protobuf Include="google/rpc/status.proto" GrpcServices="None">
+            <SourceUrl>https://raw.githubusercontent.com/googleapis/googleapis/master/google/rpc/status.proto</SourceUrl>
+        </Protobuf>
+        <Protobuf Include="udpa/annotations/migrate.proto" GrpcServices="None" Access="Internal">
+            <SourceUrl>https://raw.githubusercontent.com/cncf/udpa/main/udpa/annotations/migrate.proto</SourceUrl>
+        </Protobuf>
+        <Protobuf Include="udpa/annotations/status.proto" GrpcServices="None" Access="Internal">
+            <SourceUrl>https://raw.githubusercontent.com/cncf/udpa/main/udpa/annotations/status.proto</SourceUrl>
+        </Protobuf>
+        <Protobuf Include="udpa/annotations/versioning.proto" GrpcServices="None" Access="Internal">
+            <SourceUrl>https://raw.githubusercontent.com/cncf/udpa/main/udpa/annotations/versioning.proto</SourceUrl>
+        </Protobuf>
+        <Protobuf Include="validate/validate.proto" GrpcServices="None" Access="Internal">
+            <SourceUrl>https://raw.githubusercontent.com/envoyproxy/protoc-gen-validate/main/validate/validate.proto</SourceUrl>
+        </Protobuf>
+        <Protobuf Include="xds/core/v3/context_params.proto" GrpcServices="None">
+            <SourceUrl>https://raw.githubusercontent.com/cncf/udpa/main/xds/core/v3/context_params.proto</SourceUrl>
+        </Protobuf>
+    </ItemGroup>
+
+    <Target Name="Update Protos" BeforeTargets="Build">
+        <Message Importance="high" Text="Refresh proto files"/>
+        <Exec Command="dotnet dotnet-grpc refresh @(Protobuf, ' ')" WorkingDirectory="$(SolutionDir)\src\WirePact.Translator.Base"/>
+    </Target>
+
+</Project>
