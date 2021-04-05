@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{31690A87-A2CA-443E-AB66-C015EDFFA858}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "config", "config", "{B12F1504-567B-4954-B9BA-6660B908DF28}"
+ProjectSection(SolutionItems) = preProject
+	config\CodeAnalysis.targets = config\CodeAnalysis.targets
+	config\Common.targets = config\Common.targets
+	config\project.ruleset = config\project.ruleset
+	config\stylecop.json = config\stylecop.json
+	.gitignore = .gitignore
+	renovate.json = renovate.json
+EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3536304B-998B-4767-ABA2-38CAEB4FD23B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{DC520555-3BB4-4E79-9494-FACF939D3B50}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution", "solution", "{024BA998-BA0C-4EA6-A387-D67807AE8F8B}"
+ProjectSection(SolutionItems) = preProject
+	LICENSE = LICENSE
+	README.md = README.md
+EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_build", "build\_build.csproj", "{09A400DB-C700-477A-ABED-2917035BEAF2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09A400DB-C700-477A-ABED-2917035BEAF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09A400DB-C700-477A-ABED-2917035BEAF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{09A400DB-C700-477A-ABED-2917035BEAF2} = {31690A87-A2CA-443E-AB66-C015EDFFA858}
+	EndGlobalSection
+EndGlobal
