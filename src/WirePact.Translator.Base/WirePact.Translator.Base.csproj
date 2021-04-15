@@ -34,34 +34,34 @@
 
     <ItemGroup>
         <Protobuf Include="envoy/config/core/v3/address.proto" GrpcServices="None">
-            <SourceUrl>https://raw.githubusercontent.com/envoyproxy/envoy/fcdaf20519216082db374dfad92e5b4771cc37fd/api/envoy/config/core/v3/address.proto</SourceUrl>
+            <SourceUrl>https://raw.githubusercontent.com/envoyproxy/envoy/main/api/envoy/config/core/v3/address.proto</SourceUrl>
         </Protobuf>
         <Protobuf Include="envoy/config/core/v3/backoff.proto" GrpcServices="None">
-            <SourceUrl>https://raw.githubusercontent.com/envoyproxy/envoy/fcdaf20519216082db374dfad92e5b4771cc37fd/api/envoy/config/core/v3/backoff.proto</SourceUrl>
+            <SourceUrl>https://raw.githubusercontent.com/envoyproxy/envoy/main/api/envoy/config/core/v3/backoff.proto</SourceUrl>
         </Protobuf>
         <Protobuf Include="envoy/config/core/v3/base.proto" GrpcServices="None">
-            <SourceUrl>https://raw.githubusercontent.com/envoyproxy/envoy/fcdaf20519216082db374dfad92e5b4771cc37fd/api/envoy/config/core/v3/base.proto</SourceUrl>
+            <SourceUrl>https://raw.githubusercontent.com/envoyproxy/envoy/main/api/envoy/config/core/v3/base.proto</SourceUrl>
         </Protobuf>
         <Protobuf Include="envoy/config/core/v3/http_uri.proto" GrpcServices="None">
-            <SourceUrl>https://raw.githubusercontent.com/envoyproxy/envoy/fcdaf20519216082db374dfad92e5b4771cc37fd/api/envoy/config/core/v3/http_uri.proto</SourceUrl>
+            <SourceUrl>https://raw.githubusercontent.com/envoyproxy/envoy/main/api/envoy/config/core/v3/http_uri.proto</SourceUrl>
         </Protobuf>
         <Protobuf Include="envoy/config/core/v3/socket_option.proto" GrpcServices="None">
-            <SourceUrl>https://raw.githubusercontent.com/envoyproxy/envoy/fcdaf20519216082db374dfad92e5b4771cc37fd/api/envoy/config/core/v3/socket_option.proto</SourceUrl>
+            <SourceUrl>https://raw.githubusercontent.com/envoyproxy/envoy/main/api/envoy/config/core/v3/socket_option.proto</SourceUrl>
         </Protobuf>
         <Protobuf Include="envoy/service/auth/v3/attribute_context.proto" GrpcServices="None">
-            <SourceUrl>https://raw.githubusercontent.com/envoyproxy/envoy/fcdaf20519216082db374dfad92e5b4771cc37fd/api/envoy/service/auth/v3/attribute_context.proto</SourceUrl>
+            <SourceUrl>https://raw.githubusercontent.com/envoyproxy/envoy/main/api/envoy/service/auth/v3/attribute_context.proto</SourceUrl>
         </Protobuf>
         <Protobuf Include="envoy/service/auth/v3/external_auth.proto" GrpcServices="Server">
-            <SourceUrl>https://raw.githubusercontent.com/envoyproxy/envoy/fcdaf20519216082db374dfad92e5b4771cc37fd/api/envoy/service/auth/v3/external_auth.proto</SourceUrl>
+            <SourceUrl>https://raw.githubusercontent.com/envoyproxy/envoy/main/api/envoy/service/auth/v3/external_auth.proto</SourceUrl>
         </Protobuf>
         <Protobuf Include="envoy/type/v3/http_status.proto" GrpcServices="None">
-            <SourceUrl>https://raw.githubusercontent.com/envoyproxy/envoy/fcdaf20519216082db374dfad92e5b4771cc37fd/api/envoy/type/v3/http_status.proto</SourceUrl>
+            <SourceUrl>https://raw.githubusercontent.com/envoyproxy/envoy/main/api/envoy/type/v3/http_status.proto</SourceUrl>
         </Protobuf>
         <Protobuf Include="envoy/type/v3/percent.proto" GrpcServices="None">
-            <SourceUrl>https://raw.githubusercontent.com/envoyproxy/envoy/fcdaf20519216082db374dfad92e5b4771cc37fd/api/envoy/type/v3/percent.proto</SourceUrl>
+            <SourceUrl>https://raw.githubusercontent.com/envoyproxy/envoy/main/api/envoy/type/v3/percent.proto</SourceUrl>
         </Protobuf>
         <Protobuf Include="envoy/type/v3/semantic_version.proto" GrpcServices="None">
-            <SourceUrl>https://raw.githubusercontent.com/envoyproxy/envoy/fcdaf20519216082db374dfad92e5b4771cc37fd/api/envoy/type/v3/semantic_version.proto</SourceUrl>
+            <SourceUrl>https://raw.githubusercontent.com/envoyproxy/envoy/main/api/envoy/type/v3/semantic_version.proto</SourceUrl>
         </Protobuf>
         <Protobuf Include="google/rpc/code.proto" GrpcServices="Client">
             <SourceUrl>https://raw.githubusercontent.com/googleapis/googleapis/master/google/rpc/code.proto</SourceUrl>
